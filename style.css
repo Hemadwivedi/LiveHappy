@@ -51,7 +51,7 @@
     border-width: 2px;
     border-color: rgb(240, 164, 77);
     font-family: 'Dosis', sans-serif;
-    color: rgb(235, 152, 75);
+    color: rgb(194, 99, 10);
 }
 
 .container a:hover{
@@ -59,4 +59,15 @@
     border-color: rgb(240, 164, 77);
     box-shadow: 0px 0px 10px rgb(240, 164, 77), 0px 0px 10px rgb(240, 164, 77);
     color: rgb(245, 183, 129);
+}
+
+.card-title{
+    font-size: 35px;
+    color: rgb(155, 79, 9);
+    text-decoration: underline;
+}
+
+.card-text{
+    font-size: 25px;
+    color: rgb(233, 110, 3);
 }
