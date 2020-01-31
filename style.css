@@ -21,7 +21,13 @@
 
 .container button{
     z-index: 1;
+    border-color:rgb(168, 180, 190);
+    border-width: 2px;
+    color: rgb(168, 180, 190);
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
 }
+
 
 .video-container{
     position: absolute;
