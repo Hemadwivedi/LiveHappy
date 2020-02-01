@@ -46,3 +46,14 @@ body{
     overflow-x: hidden;
 }
 
+h2{
+    z-index: 1;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: chocolate;
+
+}
+.navbar{
+    z-index: 1;
+  
+}
