@@ -55,8 +55,8 @@ h2{
 }
 .navbar{
     z-index: 1;
+    background-color:transparent;
+    border-bottom: 1px solid rgb(160, 134, 95);
     
 }
-.nav-link{
-   
-}
+
