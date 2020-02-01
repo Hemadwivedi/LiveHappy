@@ -21,7 +21,7 @@
 
 body{
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .container button{
@@ -58,13 +58,12 @@ h2{
     background-color:transparent;
     border-bottom: 1px solid rgb(202, 144, 67);
 }
-#hide{
+.hide{
     display: none;
 }
-.videoContainer{
+#youtubeContainer{
     width: 560px;
-    height:100vh; 
-    /* height: fit-content; */
+    height: fit-content;
     background-color: rgb(236, 223, 215);
     z-index: 1;
     margin-top: 10px;
@@ -89,10 +88,11 @@ article {
     display: flex !important;   
     align-items: center;
     padding: 8px 12px;
+    border: 2px solid rgb(236, 223, 215);
 }
 
 article:hover{
-    border: 2px solid rgb(240, 192, 121);
+    border: 2px solid rgb(221, 196, 158);
     border-radius: 8px;
 }
 
