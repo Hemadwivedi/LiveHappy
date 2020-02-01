@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
-    overflow-y: scroll;
+   
+    
 }
 
 .container h1{
@@ -19,10 +19,9 @@
     
 }
 
-.card-body{
-    font-family: 'Dancing Script', cursive;
-    z-index: 1;
-    margin-left: 40px;
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .container button{
@@ -47,29 +46,3 @@
     overflow-x: hidden;
 }
 
-.container a{
-    background-color: transparent;
-    border-width: 2px;
-    border-color: rgb(240, 164, 77);
-    font-family: 'Dosis', sans-serif;
-    color: rgb(194, 99, 10);
-    font-size: 18px;
-}
-
-.container a:hover{
-    background-color: transparent;
-    border-color: rgb(240, 164, 77);
-    box-shadow: 0px 0px 10px rgb(240, 164, 77), 0px 0px 10px rgb(240, 164, 77);
-    color: rgb(245, 183, 129);
-}
-
-.card-title{
-    font-size: 35px;
-    color: rgb(155, 79, 9);
-    text-decoration: underline;
-}
-
-.card-text{
-    font-size: 25px;
-    color: rgb(233, 110, 3);
-}
