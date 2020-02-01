@@ -22,7 +22,7 @@
       <a class="navbar-brand" href="index.html">Brand Name</a>
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" id="video" href="#">Vides <span class="sr-only">(current)</span></a>
+          <a class="nav-link" id="videoBtn" href="#">Videos <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" id="jokes" href="#">Jokes <span class="sr-only">(current)</span></a>
@@ -35,16 +35,62 @@
     </div>
   </nav>
 <div class="container">
-  <h2 class="hide">Inspirational quote</h2>
+  <!-- <h2 class="hide">"Inspirational quote!"</h2> -->
     <div class="video-container">
         <video autoplay loop muted>
             <source src="Sun.mp4" type="video/mp4">
         </video>
     </div>
-  
-</div>
-    
+  <!--video container-->
+  <div class="videoContainer" id="hidee">
 
-    
+    <header>
+      <img src="logoyoutube.png" alt="" class="logo">
+    </header>
+
+    <section id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5AKKpbZYXtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <main>
+
+      <article>
+        <img src="thumdef.jpg" class="thumb">
+        <div class="details">
+          <h4>Title</h4>
+          <p>Video description</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="thumdef.jpg" class="thumb">
+        <div class="details">
+          <h4>Title</h4>
+          <p>Video description</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="thumdef.jpg" class="thumb">
+        <div class="details">
+          <h4>Title</h4>
+          <p>Video description</p>
+        </div>
+      </article>
+
+      <article>
+        <img src="thumdef.jpg" class="thumb">
+        <div class="details">
+          <h4>Title</h4>
+          <p>Video description</p>
+        </div>
+      </article>
+
+    </main>
+
+  </div>    
+<!--end video container-->
+</div>
+    <script src="scriptVideo.js"></script>
 </body>
 </html>

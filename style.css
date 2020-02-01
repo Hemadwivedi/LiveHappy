@@ -56,7 +56,47 @@ h2{
 .navbar{
     z-index: 1;
     background-color:transparent;
-    border-bottom: 1px solid rgb(160, 134, 95);
+    border-bottom: 1px solid rgb(202, 144, 67);
+}
+#hide{
+    display: none;
+}
+.videoContainer{
+    width: 560px;
+    height:100vh; 
+    /* height: fit-content; */
+    background-color: rgb(236, 223, 215);
+    z-index: 1;
+    margin-top: 10px;
+}
+header{
+    /* position: fixed; */
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(236, 223, 215);
+}
+.logo{
+    width: 120px;
+}
+.thumb{
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
     
 }
+article {
+    display: flex !important;   
+    align-items: center;
+    padding: 8px 12px;
+}
 
+article:hover{
+    border: 2px solid rgb(240, 192, 121);
+    border-radius: 8px;
+}
+
+p{
+    color: grey;
+    font-size: 12px;
+}
