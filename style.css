@@ -55,15 +55,15 @@ h2{
 }
 .navbar{
     z-index: 1;
-    background-color:transparent;
-    border-bottom: 1px solid rgb(202, 144, 67);
+    background-color:rgb(236, 223, 215);
+    /* opacity: 0.9; */
 }
 .hide{
     display: none;
 }
 #youtubeContainer{
     width: 560px;
-    height: fit-content;
+    height: 100vh;
     background-color: rgb(236, 223, 215);
     z-index: 1;
     margin-top: 10px;
@@ -99,4 +99,11 @@ article:hover{
 p{
     color: grey;
     font-size: 12px;
+}
+
+#videoBtn, #jokesBtn, #gifsBtn {
+    color: peru;
+}
+.navbar-brand{
+    color: peru !important;
 }
