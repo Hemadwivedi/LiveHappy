@@ -40,11 +40,12 @@ function mainVid(id){
 function resultsLoop(data){
     $.each(data.items, function(i, item){
     var thumb = item.snippet.thumbnails.medium.url;
+    var title = item.snippet.title;
 
     $("main").append(`<article>
     <img src="${thumb}" class="thumb">
     <div class="details">
-      <h4>Title</h4>
+      <h4>${title}</h4>
       <p>Video description</p>
     </div>
   </article>`)
