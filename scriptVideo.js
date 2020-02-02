@@ -7,6 +7,8 @@ vidBtn.addEventListener("click", startVideo);
 function startVideo(){
     
     youtubeCont.classList.remove("hide");
+    //hemas gifs container.add("hide");
+    //sherleys jokes container.add("hide");
 }
 
 $(document).ready(function(){
@@ -41,20 +43,27 @@ function resultsLoop(data){
     $.each(data.items, function(i, item){
     var thumb = item.snippet.thumbnails.medium.url;
     var title = item.snippet.title;
+    var description = item.snippet.description.substring(0,70);
+    var vid = item.snippet.resourceId.videoId;
 
-    $("main").append(`<article>
+    $("main").append(`
+    <article class= "item" data-key=${vid}>
     <img src="${thumb}" class="thumb">
     <div class="details">
       <h4>${title}</h4>
-      <p>Video description</p>
+      <p>${description}</p>
     </div>
-  </article>`)
+  </article>
+    `);
     });
-
-    
-
-  
 }
+
+$("main").on("click","article", function(){
+    var id = $(this).attr("data-key");
+    mainVid(id);
+});
+
+
 
 
 });
