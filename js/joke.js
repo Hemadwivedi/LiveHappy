@@ -11,70 +11,51 @@ $(document).ready(function () {
     $.loadCacategories = function () {
 
         $("#type1").on('click', function () {
-            $.ajax({
-                    url: queryUrlForType + this.text,
-                    method: "GET"
-                })
-                .then(function (response) {
-                    $(".card-body").empty();
-                    response.value.forEach(function (item) {
-                        var a = `<p class="card-text" id="joke-container">${item.joke}</p>`
-                        $(".card-body").append(a);
-                    })
-                })
+            var url = queryUrlForType + this.text;
+            clickableFunction(url);
+
         });
 
         $("#type2").on('click', function () {
-            $.ajax({
-                    url: queryUrlForType + this.text,
-                    method: "GET"
-                })
-                .then(function (response) {
-                    $(".card-body").empty();
-                    response.value.forEach(function (item) {
-                        var a = `<p class="card-text" id="joke-container">${item.joke}</p>`
-                        $(".card-body").append(a);
-                    })
-                });
+            var url = queryUrlForType + this.text;
+            clickableFunction(url);
         });
+
         $("#type3").on('click', function () {
-            $.ajax({
-                    url: queryUrlForType3 + "[nerdy,explicit]",
-                    method: "GET"
-                })
-                .then(function (response) {
-                    $(".card-body").empty();
-                    response.value.forEach(function (item) {
-                        var a = `<p class="card-text" id="joke-container">${item.joke}</p>`
-                        $(".card-body").append(a);
-                    })
-                });
+            var url = queryUrlForType3 + "[nerdy,explicit]";
+            clickableFunction(url);
         });
+
+        loadDefault();
+    }
+
+    var loadDefault = function () {
         $.ajax({
                 url: categoriesUrl,
                 method: "GET"
             })
             .then(function (categorieResponse) {
-
                 var type = $("#jokeType").find("a");
                 for (var i = 0; i < type.length; i++) {
                     var value = categorieResponse.value[i];
                     type[i].text = value ? value : "guess me";
                 }
-                $.ajax({
-                        url: queryUrlForType + categorieResponse.value[0],
-                        method: "GET"
-                    })
-                    .then(function (response) {
-                        $(".card-body").empty();
-                        response.value.forEach(function (item) {
-                            var a = `<p class="card-text" id="joke-container">${item.joke}</p>`
-                            $(".card-body").append(a);
-                        })
-
-
-                    })
+                var url = queryUrlForType + categorieResponse.value[0]
+                clickableFunction(url);
             })
+    }
+    var clickableFunction = function (url) {
+        $.ajax({
+                url: url,
+                method: "GET"
+            })
+            .then(function (response) {
+                $(".card-body").empty();
+                response.value.forEach(function (item) {
+                    var a = `<p class="card-text" id="joke-container">${item.joke}</p>`
+                    $(".card-body").append(a);
+                })
+            });
     }
 
 });
