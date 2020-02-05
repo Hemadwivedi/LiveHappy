@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,43 +14,61 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <title>LiveHappy</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarToggler">
-      <a class="navbar-brand" href="">LiveHappy</a>
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" id="videoBtn" href="#">Videos <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" id="jokesBtn" href="#">Jokes <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" id="gifsBtn" href="#">Gifs <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-      
-    </div>
-  </nav>
-<div class="container">
-  <!-- <h2 class="hide">"Inspirational quote!"</h2> -->
-    <div class="video-container">
-        <video autoplay loop muted>
-            <source src="../asset/video/sun.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div id="content">
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <a class="navbar-brand" href="">LiveHappy</a>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" id="videoBtn" href="#">Videos <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="jokesBtn" href="#">Jokes <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" id="gifsBtn" href="#">Gifs <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="row">
+            <div id='jokesContainer'>
+                <!-- <img src='../asset/image/LMTY_jokes_header.jpg' id='moosieimg'> </img>
+            <div id="jokeText"></div> -->
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class='video-container'>
+                <video autoplay loop muted>
+                <source src="../asset/video/sun.mp4" type="video/mp4">
+            </video>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <!-- <img src="../asset/image/logoyoutube.png" alt="" class="logo"> -->
+            <img src="../asset/image/logoyoutube.png" alt="">
+
+        </div>
 
     </div>
-</div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!--script src="../js/scriptVideo.js"></!--script-->
+    <script src="../js/scriptVideo.js"></script>
     <script src="../js/joke.js"></script>
     <script src="../js/layout.js"></script>
     <script src="../js/gif.js"></script>
-    
+
 </body>
+
 </html>
