@@ -15,6 +15,11 @@ $(document).ready(function () {
         var youtubeCont = document.getElementById("youtubeContainer");
         youtubeCont.classList.remove("hide");
         loadVids();
+        
+        $("main").on("click", "article", function () {
+            var id = $(this).attr("data-key");
+            mainVid(id);
+        });
     }
 
     function loadVids() {
@@ -49,10 +54,5 @@ $(document).ready(function () {
     `);
         });
     }
-
-    $("main").on("click", "article", function () {
-        var id = $(this).attr("data-key");
-        mainVid(id);
-    });
 
 });
