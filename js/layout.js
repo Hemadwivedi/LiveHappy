@@ -16,7 +16,9 @@ $(document).ready(function () {
 
 
     $("#videoBtn").on('click', function () {
-
+        var url = "../html/video.html";
+        var loadFun = $.loadVideo;
+        loadpage(url, loadFun);
     });
 
     var loadpage = function (url, callBackFunction) {
