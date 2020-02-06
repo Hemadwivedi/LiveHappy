@@ -118,3 +118,18 @@ h4{
     background-color: rgb(236, 223, 215) !important;
     border-radius: 0 !important;
 }
+
+.nav-link{
+    color: peru;
+}
+.nav-link:hover{
+    color: peru;
+}
+.btn-outline-secondary{
+    color: peru !important;
+    border: solid 1px peru !important;
+}
+.btn-outline-secondary:hover{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
