@@ -14,7 +14,6 @@
     padding: 20px;
     margin: 15px;
     z-index: 1;
-    
 }
 
 body{
@@ -54,7 +53,7 @@ h2{
 .navbar{
     z-index: 1;
     background-color:rgb(236, 223, 215);
-    /* opacity: 0.9; */
+    margin-bottom: 20px;
 }
 .hide{
     display: none;
@@ -63,10 +62,9 @@ h2{
     width: 560px;
     background-color: rgb(236, 223, 215);
     z-index: 1;
-    margin-top: 250px;
+    margin-top: 50px;
 }
 header{
-    /* position: fixed; */
     text-align: center;
     padding: 10px;
     background-color: rgb(236, 223, 215);
@@ -112,11 +110,13 @@ h4{
 
 #content{
     z-index: 1;
+    margin-top: 150px;
 }
 
 .jumbotron{
     background-color: rgb(236, 223, 215) !important;
     border-radius: 0 !important;
+    margin-top: 10px !important;
 }
 
 .nav-link{
