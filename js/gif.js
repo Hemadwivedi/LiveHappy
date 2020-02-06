@@ -16,7 +16,7 @@ $(document).ready(function () {
 
     function loadGifs(gifType) {
         $.ajax({
-                url: `https://api.giphy.com/v1/gifs/search?api_key=tr1aocA11XUCIxsJqnaSKqLrV7244mfk&q=${gifType}&limit=25&offset=0&rating=G&lang=en`,
+                url: `https://api.giphy.com/v1/gifs/search?api_key=tr1aocA11XUCIxsJqnaSKqLrV7244mfk&q=${gifType}&limit=20&offset=0&rating=G&lang=en`,
                 method: "GET"
             })
             .then(function (response) {

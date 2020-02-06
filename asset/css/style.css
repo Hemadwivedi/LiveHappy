@@ -133,3 +133,8 @@ h4{
     background-color: transparent !important;
     box-shadow: none !important;
 }
+.card-body{
+    padding-left: 43px !important;
+    width: fit-content;
+    
+}
