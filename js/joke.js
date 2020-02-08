@@ -10,11 +10,11 @@ $(document).ready(function () {
 
     $.loadCacategories = function () {
 
-        $("#type1").on('click', function () {
-            var url = queryUrlForType + this.text;
-            clickableFunction(url);
+       // $("#type1").on('click', function () {
+         //   var url = queryUrlForType + this.text;
+         //   clickableFunction(url);
 
-        });
+       // });
 
         $("#type2").on('click', function () {
             var url = queryUrlForType + this.text;
@@ -22,7 +22,7 @@ $(document).ready(function () {
         });
 
         $("#type3").on('click', function () {
-            var url = queryUrlForType3 + "[nerdy,explicit]";
+            var url = queryUrlForType3 + "[nerdy]";
             clickableFunction(url);
         });
 
@@ -37,10 +37,10 @@ $(document).ready(function () {
             .then(function (categorieResponse) {
                 var type = $("#jokeType").find("a");
                 for (var i = 0; i < type.length; i++) {
-                    var value = categorieResponse.value[i];
+                    var value = categorieResponse.value[i+1];
                     type[i].text = value ? value : "guess me";
                 }
-                var url = queryUrlForType + categorieResponse.value[0]
+                var url = queryUrlForType + categorieResponse.value[1];
                 clickableFunction(url);
             })
     }
