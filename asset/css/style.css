@@ -148,3 +148,16 @@ header{
   font-family: 'Dancing Script', cursive;
   font-size: 30px !important;
 }
+.laugh {
+  font-family: 'Dancing Script', cursive;
+}
+.laughter{
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+img{
+  padding: 20px;
+}
+.card-body{
+  margin-left: 40px;
+}
