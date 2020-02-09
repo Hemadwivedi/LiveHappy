@@ -18,17 +18,17 @@ body {
   }
   
   .carousel-image-1 {
-    background: url('../img/image1.jpg');
+    background: url('../image/sunflower.jpg');
     background-size: cover;
   }
   
   .carousel-image-2 {
-    background: url('../img/image2.jpg');
+    background: url('../image/sunset.jpg');
     background-size: cover;
   }
   
   .carousel-image-3 {
-    background: url('../img/image3.jpg');
+    background: url('../image/cherry.jpg');
     background-size: cover;
   }
   
@@ -68,7 +68,7 @@ body {
   
   #page-header {
     height: 200px;
-    background: url('../img/image1.jpg');
+    background: url('../image/pexels-photo-1263986.jpeg');
     background-position: 0 -360px;
     background-attachment: fixed;
     color: #fff;

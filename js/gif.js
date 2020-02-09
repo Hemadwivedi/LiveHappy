@@ -1,25 +1,21 @@
 $(document).ready(function () {
     var apiKey = "tr1aocA11XUCIxsJqnaSKqLrV7244mfk";
+    $(".toggle").hide();
 
-    $.loadGifs = function () {
-        $(".toggle").hide();
-
-        $(".toggle").on("click", function () {
-            loadGifs("funny");
-        })
-
-        $("#click-button").on('click', function () {
-            var inputValue = $("#gifType").val();
-            loadGifs(inputValue);
-           $(".toggle").unbind("click")
-            $(".toggle").bind("click", function () {
-                loadGifs(inputValue);
-            })
-        });
-
+    $(".toggle").on("click", function () {
         loadGifs("funny");
+    })
 
-    }
+    $("#click-button").on('click', function () {
+        var inputValue = $("#gifType").val();
+        loadGifs(inputValue);
+       $(".toggle").unbind("click")
+        $(".toggle").bind("click", function () {
+            loadGifs(inputValue);
+        })
+    });
+
+    loadGifs("funny");
 
     function loadGifs(gifType) {
         $(".toggle").hide();

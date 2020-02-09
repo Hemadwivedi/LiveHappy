@@ -11,16 +11,15 @@ $(document).ready(function () {
         playlistId: playlistId
     }
 
-    $.loadVideo = function () {
-        var youtubeCont = document.getElementById("youtubeContainer");
-        youtubeCont.classList.remove("hide");
-        loadVids();
-        
-        $("main").on("click", "article", function () {
-            var id = $(this).attr("data-key");
-            mainVid(id);
-        });
-    }
+  
+    var youtubeCont = document.getElementById("youtubeContainer");
+    youtubeCont.classList.remove("hide");
+    loadVids();
+    
+    $("main").on("click", "article", function () {
+        var id = $(this).attr("data-key");
+        mainVid(id);
+    });
 
     function loadVids() {
         $.getJSON(URL, options, function (data) {

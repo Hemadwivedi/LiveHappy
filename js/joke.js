@@ -8,26 +8,15 @@ $(document).ready(function () {
 
     var queryUrlForType3 = randomUrl + "?exclude="
 
-    $.loadCacategories = function () {
+    $("#type2").on('click', function () {
+        var url = queryUrlForType + this.text;
+        clickableFunction(url);
+    });
 
-       // $("#type1").on('click', function () {
-         //   var url = queryUrlForType + this.text;
-         //   clickableFunction(url);
-
-       // });
-
-        $("#type2").on('click', function () {
-            var url = queryUrlForType + this.text;
-            clickableFunction(url);
-        });
-
-        $("#type3").on('click', function () {
-            var url = queryUrlForType3 + "[nerdy]";
-            clickableFunction(url);
-        });
-
-        loadDefault();
-    }
+    $("#type3").on('click', function () {
+        var url = queryUrlForType3 + "[nerdy]";
+        clickableFunction(url);
+    });
 
     var loadDefault = function () {
         $.ajax({
@@ -44,6 +33,10 @@ $(document).ready(function () {
                 clickableFunction(url);
             })
     }
+    
+    loadDefault();
+
+    
     var clickableFunction = function (url) {
         $.ajax({
                 url: url,
