@@ -39,7 +39,7 @@ $(document).ready(function () {
         $.each(data.items, function (i, item) {
             var thumb = item.snippet.thumbnails.medium.url;
             var title = item.snippet.title;
-            var description = item.snippet.description.substring(0, 70);
+            var description = item.snippet.description.substring(0, 150);
             var vid = item.snippet.resourceId.videoId;
 
             $("main").append(`
@@ -47,7 +47,7 @@ $(document).ready(function () {
     <img src="${thumb}" class="thumb">
     <div class="details">
       <h4>${title}</h4>
-      <p>${description}</p>
+      <h5>${description}</h5>
     </div>
   </article>
     `);
