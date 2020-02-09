@@ -100,21 +100,21 @@
 
         <div class="col-md-4 mb-4 text-center">
           <a href="html/gif.html" class="text-dark">
-            <i class="fas fa-smile fa-3x mb-2"></i> 
+            <i class="fas fa-smile fa-3x mb-2 icon_color"></i> 
           </a>
           <h3 class="greettxt">Giphy</h3>
           <p class="greettxt">Rich library of gifs at your fingertips!</p>
         </div>
         <div class="col-md-4 mb-4 text-center">
           <a href="html/video.html" class="text-dark">
-            <i class="fab fa-youtube fa-3x mb-2"></i>
+            <i class="fab fa-youtube fa-3x mb-2 icon_color"></i>
           </a>
           <h3 class="greettxt">Video</h3>
           <p class="greettxt">Video playlist made exclusively for your entertainment!</p>
         </div>
         <div class="col-md-4 mb-4 text-center">
           <a href="html/joke.html" class="text-dark">
-            <i class="fas fa-smile fa-3x mb-2"></i>
+            <i class="fas fa-smile fa-3x mb-2 icon_color"></i>
           </a>
           <h3 class="greettxt">Joke</h3>
           <p class="greettxt">Great selection of random jokes, designed to make you laugh!</p>
@@ -123,19 +123,36 @@
     </div>
   </section>
 
-
-  <!-- HOME HEADING SECTION -->
-  <footer id="main-footer" class="text-center p-4">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <p>Copyright &copy;
-            <span id="year"></span></p>
+  <footer id="main-footer" class="text-center fixed-bottom footer bg-dark">
+    <div class="row">
+      <div class="col">
+        <div class="text-white">
+          <div class="d-flex justify-content-center row-hl">
+            <div class="p-3">
+              <a href="http://twitter.com" class="text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="p-3">
+              <a href="http://facebook.com" class="text-white">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+            <div class="p-3">
+              <a href="http://instagram.com" class="text-white">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="p-3">
+              <a href="http://github.com" class="text-white">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </footer>
-
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -148,8 +165,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
   <script>
-    $('#year').text(new Date().getFullYear());
-    // Configure Slider
     $('.carousel').carousel({
       interval: 6000,
       pause: 'hover'

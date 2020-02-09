@@ -169,12 +169,11 @@ header{
   text-indent: 50px;
   color: #444;
 }
-.fas{
+.icon_color{
+  color: #444;
   color: #444;
 }
-.fab{
-  color: #444;
-}
+
 .greettxt{
   color: #444;
 }

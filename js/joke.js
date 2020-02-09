@@ -26,14 +26,18 @@ $(document).ready(function () {
             .then(function (categorieResponse) {
                 var type = $("#jokeType").find("a");
                 for (var i = 0; i < type.length; i++) {
-                    var value = categorieResponse.value[i+1];
-                    type[i].text = value ? value : "guess me";
+                    var value = categorieResponse.value[i+1]; 
+                    if(value !== undefined){
+                        type[i].text = value.toUpperCase();
+                    }else{
+                        type[i].text = "GUESS ME";
+                    }
                 }
                 var url = queryUrlForType + categorieResponse.value[1];
                 clickableFunction(url);
             })
     }
-    
+
     loadDefault();
 
     
