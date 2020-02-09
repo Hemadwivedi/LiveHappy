@@ -42,7 +42,6 @@ $(document).ready(function () {
         rowDiv.addClass("row mb-4");
         data.forEach(item => {
             var downsizedLarge = item.images.downsized_large;
-            var preview = item.images.preview_gif.url;
             var colDiv = $("<div>");
             colDiv.addClass("col-md-4");
             var anchor = $("<a>");
@@ -52,7 +51,7 @@ $(document).ready(function () {
             anchor.attr("data-height", downsizedLarge.height);
             anchor.attr("data-width", downsizedLarge.width);
             var image = $("<img>");
-            image.attr("src", preview);
+            image.attr("src", downsizedLarge.url);
             image.attr('width', "250");
             image.attr('height', "250");
             anchor.append(image);
