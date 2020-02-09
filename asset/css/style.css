@@ -116,7 +116,7 @@ h5{
   font-size: 12px;
 }
 h4{
-  font-size: 16px;
+  font-size: 14px;
 }
 #youtubeContainer{
   width: 562px;
@@ -124,14 +124,27 @@ h4{
   background-color: rgb(255, 249, 249);
   border: rgb(163, 159, 159) thin solid;
 }
+article {
+  display: flex !important;   
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px rgb(255, 249, 249) solid;
+}
+article:hover{
+  border: 1px rgb(163, 158, 158) solid;
+}
 header{
   text-align: center;
   padding: 10px;
 }
-h1{
+.display-3{
   font-family: 'Dancing Script', cursive;
 }
 .lead{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px !important;
+}
+.navbar-brand{
   font-family: 'Dancing Script', cursive;
   font-size: 30px !important;
 }
