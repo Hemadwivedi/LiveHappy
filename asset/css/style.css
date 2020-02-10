@@ -95,7 +95,7 @@ body {
   }
   
   #main-footer {
-    background: #000;
+    background: #000 !important;
     color: #fff;
   }
   .logo{
