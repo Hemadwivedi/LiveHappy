@@ -95,7 +95,7 @@ body {
   }
   
   #main-footer {
-    background: #000 !important;
+    /* background: #212529 !important; */
     color: #fff;
   }
   .logo{
@@ -182,4 +182,7 @@ header{
 }
 #gifinfo{
   color: #444;
+}
+#staff{
+  background-color: rgb(139, 139, 139) !important;
 }
