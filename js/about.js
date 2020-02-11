@@ -1,5 +1,3 @@
-$(document).ready(function(){
-    $.aboutReady=function(){
-        console.log("ready");
-    }
-})
+$.aboutReady = function () {
+    console.log("ready");
+}
