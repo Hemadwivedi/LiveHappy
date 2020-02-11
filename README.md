@@ -3,6 +3,8 @@
 ## Project-1:
 Live Happy
 https://hemadwivedi.github.io/LiveHappy/
+Live Happy is a project website that is supposed to bring to you positive, uplifting
+and funny content, while battling depression and relieving you from the daily stress.
 
 ### Contributors:
 Ekaterina Blagoeva, Hema Dwivedi and Shirley Rivera
