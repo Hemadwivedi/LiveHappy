@@ -9,7 +9,7 @@ $(document).ready(function () {
     var queryUrlForType3 = randomUrl + "?exclude="
 
     $("#type2").on('click', function () {
-        var url = queryUrlForType + this.text;
+        var url = queryUrlForType + this.text.toLowerCase();
         clickableFunction(url);
     });
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 var type = $("#jokeType").find("a");
                 for (var i = 0; i < type.length; i++) {
                     var value = categorieResponse.value[i+1]; 
-                    if(value !== undefined){
+                    if(value !==undefined){
                         type[i].text = value.toUpperCase();
                     }else{
                         type[i].text = "GUESS ME";
