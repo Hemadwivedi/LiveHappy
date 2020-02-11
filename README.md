@@ -2,7 +2,7 @@
 
 ## Project-1:
 Live Happy
-https://hemadwivedi.github.io/LiveHappy/
+
 
 ### Description:
 Live Happy is a project website that is supposed to bring to you positive, uplifting
