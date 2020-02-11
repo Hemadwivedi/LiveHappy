@@ -1,6 +1,6 @@
 $.videoReady = function () {
 
-    var key = "AIzaSyBbk_ozhKHH28nWJ1hU4vxNbwLqtsd9gIw";
+    var key = "AIzaSyCXL04kxBHY001Mm2f4QnlI0f-h74NWhvg";
     var playlistId = "PLlKT_xceHwURQUQ5LbA95KvpcQw57BRij";
     var URL = "https://www.googleapis.com/youtube/v3/playlistItems";
 
