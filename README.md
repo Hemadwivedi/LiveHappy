@@ -30,6 +30,6 @@ Ekaterina Blagoeva, Hema Dwivedi and Shirley Rivera
 * Video page
     * Includes a playlist of funny compilation videos
 * Jokes page 
-    * Includes randomly generated jokes about Chuck Norris with in two categories.
+    * Includes randomly generated jokes about Chuck Norris with two categories to choose from.
 
 
