@@ -7,9 +7,9 @@ $(document).ready(function () {
     })
 
     $("#jokeNav").on("click", function () {
-     var url="../html/joke.html";
-     var callBackFunction=$.jokeReady;
-     loadpage(url,callBackFunction);
+        var url = "../html/joke.html";
+        var callBackFunction = $.jokeReady;
+        loadpage(url, callBackFunction);
     })
 
     $("#giphyNav").on("click", function () {
@@ -17,10 +17,11 @@ $(document).ready(function () {
         var callBackFunction = $.gifReady;
         loadpage(url, callBackFunction);
     })
+    
     $("#videoNav").on("click", function () {
-     var url="../html/video.html";
-     var callBackFunction=$.videoReady;
-     loadpage(url,callBackFunction);
+        var url = "../html/video.html";
+        var callBackFunction = $.videoReady;
+        loadpage(url, callBackFunction);
     })
 
     var loadpage = function (url, callBackFunction) {
