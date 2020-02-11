@@ -1,10 +1,11 @@
 # LiveHappy
 
-Project-1:
+## Project-1:
 Live Happy
 
-Contributers:
+### Contributers:
 Ekaterina Blagoeva, Hema Dwivedi and Shirley Rivera
 
-Summary: 
+### Summary: 
+
 
