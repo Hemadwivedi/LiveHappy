@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$.videoReady = function () {
 
     var key = "AIzaSyBbk_ozhKHH28nWJ1hU4vxNbwLqtsd9gIw";
     var playlistId = "PLlKT_xceHwURQUQ5LbA95KvpcQw57BRij";
@@ -11,11 +11,11 @@ $(document).ready(function () {
         playlistId: playlistId
     }
 
-  
+
     var youtubeCont = document.getElementById("youtubeContainer");
     youtubeCont.classList.remove("hide");
     loadVids();
-    
+
     $("main").on("click", "article", function () {
         var id = $(this).attr("data-key");
         mainVid(id);
@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     function mainVid(id) {
         $("#video").html(`<iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    `);
+`);
     }
 
     function resultsLoop(data) {
@@ -43,15 +43,14 @@ $(document).ready(function () {
             var vid = item.snippet.resourceId.videoId;
 
             $("main").append(`
-    <article class= "item" data-key=${vid}>
-    <img src="${thumb}" class="thumb">
-    <div class="details">
-      <h4>${title}</h4>
-      <h5>${description}</h5>
-    </div>
-  </article>
-    `);
+<article class= "item" data-key=${vid}>
+<img src="${thumb}" class="thumb">
+<div class="details">
+  <h4>${title}</h4>
+  <h5>${description}</h5>
+</div>
+</article>
+`);
         });
     }
-
-});
+}

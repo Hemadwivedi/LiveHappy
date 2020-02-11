@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$.jokeReady = function () {
     var baseJokeUrl = "https://api.icndb.com";
     var number = 15;
     var type = "";
@@ -26,10 +26,10 @@ $(document).ready(function () {
             .then(function (categorieResponse) {
                 var type = $("#jokeType").find("a");
                 for (var i = 0; i < type.length; i++) {
-                    var value = categorieResponse.value[i+1]; 
-                    if(value !==undefined){
+                    var value = categorieResponse.value[i + 1];
+                    if (value !== undefined) {
                         type[i].text = value.toUpperCase();
-                    }else{
+                    } else {
                         type[i].text = "GUESS ME";
                     }
                 }
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     loadDefault();
 
-    
+
     var clickableFunction = function (url) {
         $.ajax({
                 url: url,
@@ -54,7 +54,4 @@ $(document).ready(function () {
                 })
             });
     }
-
-});
-// http://api.icndb.com/jokes/random?limitTo=[nerdy]
-// http://api.icndb.com/jokes/random?limitTo=[nerdy,explicit]
+}

@@ -1,8 +1,6 @@
-$(document).ready(function () {
+$.gifReady = function () {
 
     var apiKey = "tr1aocA11XUCIxsJqnaSKqLrV7244mfk";
-
-    
 
     loadGifs("hello");
 
@@ -23,7 +21,7 @@ $(document).ready(function () {
                 $('[data-toggle="lightbox"]').on('click', function (event) {
                     event.preventDefault();
                     $(this).ekkoLightbox();
-                 });
+                });
             })
 
     }
@@ -37,7 +35,7 @@ $(document).ready(function () {
     }
 
     function createRow(data) {
-       
+
         var rowDiv = $("<div>");
         rowDiv.addClass("row mb-4");
         data.forEach(item => {
@@ -61,4 +59,4 @@ $(document).ready(function () {
         $(".card-body").append(rowDiv);
     }
 
-})
+}
